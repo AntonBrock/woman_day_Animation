@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Woman's day</title>
+		<link rel="stylesheet" href="main.css">
+		<link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+</head>
+<body> 
+
+	<section class="container">
+		<div class="main">
+			<h1 class="title">International Women's Day</h1>
+			<div class="elemens">
+					<!-- <h1 class="title">International Women's Day</h1> -->
+			<div>o</div>
+			</div>
+			<img class="bird_1" src="bird.png" alt="bird 1" width="115">
+			<img class="bird_2" src="bird.png" alt="bird 2 " width="115">
+			<img class="water" src="water.png" alt="holy" width="600">
+		</div>
+	</section>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script>
+		let bird = new TimelineMax();
+		bird.from('.elemens', 2, {opacity: 0, delay: 1});
+		bird.from('.bird_1', 0.7, {opacity:0});
+		bird.from('.bird_2', 0.7, {opacity:0}, '-=0.7');
+
+
+		bird.to('.bird_1', 0.3, {transform:"translateX(-170px)", opacity: 0, delay: 0.5})
+		bird.to('.bird_2', 0.3, {transform:"translateX(170px)", opacity: 0}, '-=0.3');
+		
+		bird.to('.elemens', 0.2, {opacity: 0, delay: 0.3});
+		bird.from('.water', 0.6, {opacity: 0, delay: 0.2});
+		bird.from('.title', 0.7, {opacity: 0});
+
+	</script>
+</body>
+</html>

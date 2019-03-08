@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: #181818;
+}
+
+.container {
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main  {
+    background: #1B1B1B;
+    width: 400px;
+    height: 400px;
+}
+
+.elemens {
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    color: #ffffff;
+    font-size: 68px;
+    width: 40%;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    margin-left: -5.5%;
+    margin-top: 8%;
+}
+
+.elemens div  {
+    position: absolute;
+    width: 80px; /* поддерживаются любые единицы, в том числе проценты */
+    height: 80px;
+    margin-left: 160px;
+    margin-top: 160px;
+    background: #CD1B1B;
+    color: #1B1B1B;
+    border-radius: 50%;
+  }
+
+     .bird_1 {
+      margin-top: 30%;
+      margin-left: 15%;
+  }
+
+     .bird_2 {
+      transform: rotateY(150deg);
+      margin-left: 10%;
+  }
+
+  .water {
+      margin-top: -57%;
+      margin-left: -25%;
+  }
